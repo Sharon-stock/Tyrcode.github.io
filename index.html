@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyrcode</title>
+  <link href="./css/style.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="position-sticky top-0 bg-dark z-1000">
+    <section class="container">
+      <nav class="navbar navbar-dark d-none d-md-flex justify-content-md-between align-items-center py-4 navbar-expand">
+        <section class="d-flex justify-content-between align-items-center">
+          <a class="navbar-brand" href="#" style="width: 200px;"><img src="./img/logo.png" alt="logo"
+              class="img-fluid"></a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">N. Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#producto">Producto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sedes">Sedes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactoModal"
+                data-bs-whatever="@mdo">Contáctanos</a>
+            </li>
+          </ul>
+        </section>
+        <section class="d-flex justify-content-between align-items-center gap-2">
+          <button type="button" class="btn btn-outline-secondary d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#RegistroModal"
+          data-bs-whatever="@mdo">
+            <lord-icon src="https://cdn.lordicon.com/dxjqoygy.json" trigger="hover"
+              colors="primary:#ffffff,secondary:#ffffff" stroke="75" style="width:32px;height:32px">
+            </lord-icon> Registrarme</button>
+          <button type="button" class="btn btn-primary d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#loginModal"
+          data-bs-whatever="@mdo">
+            <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="hover" stroke="75"
+              colors="primary:#fff,secondary:#fff" style="width:32px;height:32px">
+            </lord-icon> Iniciar sesión</button>
+
+        </section>
+      </nav>
+      <nav class="navbar navbar-dark bg-dark d-flex d-md-none">
+        <a class="navbar-brand w-50" href="#"><img src="./img/logo.png" alt="logo" class="img-fluid"></a>
+        <button class="navbar-toggler d-md-none d-block" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="navbar-brand w-50" href="#"><img src="./img/logo.png" alt="logo" class="img-fluid"></a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">N. Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#producto">Producto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sedes">Sedes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#galeria">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactoModal"
+                  data-bs-whatever="@mdo">Contáctanos</a>
+              </li>
+            </ul>
+            <section class="d-flex align-items-center gap-2">
+              <button type="button" class="btn btn-outline-secondary d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#RegistroModal"
+              data-bs-whatever="@mdo">
+                <lord-icon src="https://cdn.lordicon.com/dxjqoygy.json" trigger="hover"
+                  colors="primary:#ffffff,secondary:#ffffff" stroke="75" style="width:32px;height:32px">
+                </lord-icon> Registrarme</button>
+              <button type="button" class="btn btn-primary d-flex justify-content-between align-items-center"  data-bs-toggle="modal" data-bs-target="#loginModal"
+              data-bs-whatever="@mdo">
+                <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="hover" stroke="75"
+                  colors="primary:#fff,secondary:#fff" style="width:32px;height:32px">
+                </lord-icon> Iniciar sesión</button>
+            </section>
+          </div>
+        </div>
+      </nav>
+      </div>
+  </header>
+  <main>
+    <section id="inicio" class="carousel slide container-fluid" data-bs-ride="false">
+      <section class="carousel-indicators">
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </section>
+      <section class="carousel-inner">
+        <article class="carousel-item active" style="background-image: url(./img/banner-1.jpg);">
+        </article>
+        <article class="carousel-item" style="background-image: url(./img/banner-2.jpg);">
+        </article>
+        <article class="carousel-item" style="background-image: url(./img/banner-3.jpg);">
+        </article>
+      </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#inicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#inicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <section>
+      <section class="container">
+        <h3 class="text-center px-4 my-5">Bienvenidos a Tyrcode, su socio confiable en la automatización de procesos
+                                        empresariales. Transformamos su visión en realidad a través de la programación 
+                                      y la plataforma Arduino. Descubra cómo nuestra pasión por la innovación puede impulsar
+                                                          la eficiencia y el crecimiento de su negocio.</h3>
+      </section>
+    </section>
+    <section class="mt-5 container" id="sobre">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <img src="./img/quienes-somos.jpg" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <article class="card bg-dark border-0">
+            <section class="card-body">
+
+              <h2 class="sub-title text-uppercase">Quiénes somos</h2>
+              <p>En Tyrcode, hemos estado liderando el camino en la automatización de procesos empresariales desde <strong>2023</strong>. Nuestra empresa fue fundada con la visión de simplificar y
+                optimizar las operaciones empresariales a través de la tecnología.</p>
+            </section>
+            <section class="card-footer">
+              <h4 class="text-primary">Valores coorporativos</h4>
+              <div class="container">
+                <h5>Innovación</h5>
+                <p>Nos esforzamos por estar a la vanguardia de la tecnología, buscando constantemente nuevas formas de mejorar y optimizar los procesos empresariales.</p>
+                <hr/>
+                <h5>Integridad</h5>
+                <p>Operamos con honestidad y transparencia en todas nuestras interacciones, manteniendo la confianza de nuestros clientes.</p>
+                <hr/>
+                <h5>Compromiso</h5>
+                <p>Estamos dedicados a brindar soluciones excepcionales y un servicio al cliente de primera clase.</p>
+                <hr/>
+                <h5>Colaboración</h5>
+                <p>Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y entregar soluciones personalizadas.</p>
+                <hr/>
+                <h5>Sostenibilidad</h5>
+                <p>Nos preocupamos por el medio ambiente y buscamos soluciones sostenibles en nuestras implementaciones.</p>
+                <hr/>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="container d-flex align-items-center justify-content-center mt-5" id="equipo">
+      <h2 class="sub-title text-uppercase">Equipo de trabajo</h2>
+    </section>
+    <section class="container d-flex flex-column flex-md-row gap-3 justify-content-center mt-4">
+      <article class="card-glass">
+        <div class="box">
+          <h3 class="title">Sharon Vargas</h3>
+          <lord-icon src="https://cdn.lordicon.com/qitvuzec.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+            stroke="80" style="width:100px;height:100px">
+          </lord-icon>
+          <div>
+            <strong>CEO</strong>
+          
+          </div>
+        </div>
+      </article>
+      <article class="card-glass">
+        <div class="box">
+          <h3 class="title">Jimena Campos</h3>
+            <lord-icon src="https://cdn.lordicon.com/gqftvyox.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+              stroke="80" style="width:100px;height:100px">
+            </lord-icon>
+            <div>
+              <strong>CTO</strong>
+          
+          </div>
+        </div>
+      </article>
+      <article class="card-glass">
+        <div class="box">
+          <h3 class="title">Vanesa Riveros</h3>
+            <lord-icon src="https://cdn.lordicon.com/qitvuzec.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+              stroke="80" style="width:100px;height:100px">
+            </lord-icon>
+            <div>
+              <strong>CTO</strong>
+          
+          </div>
+        </div>
+      </article>
+      <article class="card-glass">
+        <div class="box">
+          <h3 class="title">Isabel Mosquera</h3>
+          <lord-icon src="https://cdn.lordicon.com/gqftvyox.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+            stroke="80" style="width:100px;height:100px">
+          </lord-icon>
+          <div>
+            <strong>CTO</strong>
+          </div>
+        </div>
+      </article>
+
+    </section>
+    <section class="mt-5 container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <article class="card bg-dark border-0">
+            <section class="card-body">
+              <h2 class="sub-title text-uppercase">Misión</h2>
+              <p>Nuestra misión es simplificar y optimizar los procesos empresariales a través de soluciones innovadoras de automatización basadas en la programación y Arduino. Estamos comprometidos en ayudar a las empresas a mejorar la eficiencia, reducir costos y aumentar la competitividad en un mundo empresarial en constante cambio.</p>
+            </section>
+
+          </article>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <img src="./img/mision.jpg" class="img-fluid rounded" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="mt-5 container">
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-md-6 d-flex align-items-center">
+          <img src="./img/vision.jpg" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <article class="card bg-dark border-0">
+            <section class="card-body">
+              <h2 class="sub-title text-uppercase">Visión</h2>
+              <p>Ser reconocidos como líderes en la automatización de procesos empresariales, brindando soluciones de vanguardia que impulsan el éxito sostenible de nuestros clientes. Queremos ser la primera elección para las empresas que buscan transformar y modernizar sus operaciones.</p>
+            </section>
+
+          </article>
+        </div>
+
+      </div>
+    </section>
+    <section class="container d-flex flex-column align-items-center justify-content-center mt-5" id="producto">
+      <lord-icon src="https://cdn.lordicon.com/ysonqgnt.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+        stroke="80" style="width:100px;height:100px">
+      </lord-icon>
+      <h2 class="sub-title text-uppercase">Riego automatizado</h2>
+    </section>
+    <section class="container d-flex flex-column gap-3 justify-content-center mt-4">
+      
+      <img src="./img/product.jpg" class="img-fluid rounded" alt="">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur eos excepturi vitae non voluptatibus quis similique! Voluptate ipsum repellat sequi. Accusantium, officia praesentium neque facere voluptatum dolores distinctio inventore.
+      </p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis totam labore, repellat laborum porro ab ratione ex mollitia praesentium facere perferendis rem delectus similique repudiandae aperiam tempore debitis voluptatem cum.</p>
+      <h3 class="text-decoration">Características</h3>
+      <ul>
+        <li>Implementación de sistemas de automatización personalizados.</li>
+        <li>Integración de hardware Arduino en la infraestructura existente.</li>
+        <li>Desarrollo de software a medida para el control y monitoreo de procesos.</li>
+      </ul>
+    </section>
+    <section class="container d-flex flex-column align-items-center justify-content-center mt-5" id="sedes">
+      <lord-icon src="https://cdn.lordicon.com/hicajugo.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+        stroke="80" style="width:100px;height:100px">
+      </lord-icon>
+      <h2 class="sub-title text-uppercase">Sedes</h2>
+    </section>
+    <section class="container d-flex flex-column flex-md-row gap-3 justify-content-center mt-4">
+      <article class="card-glass">
+        <div class="box">
+          <h3 class="title">Bogotá, autopista norte</h3>
+          <lord-icon src="https://cdn.lordicon.com/aojaypmj.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+            stroke="80" style="width:100px;height:100px">
+          </lord-icon>
+          <div>
+            <strong>Carre20#14-04 Usaquen</strong>
+          
+          </div>
+        </div>
+      </article>
+      <article class="card-glass">
+        <div class="box">
+          <h3 class="title">Jimena Campos</h3>
+            <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+              stroke="80" style="width:100px;height:100px">
+            </lord-icon>
+            <div>
+              <strong>CTO</strong>
+          
+          </div>
+        </div>
+      </article>
+      <article class="card-glass">
+        <div class="box">
+          <h3 class="title">Vanesa Riveros</h3>
+            <lord-icon src="https://cdn.lordicon.com/imamsnbq.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+              stroke="80" style="width:100px;height:100px">
+            </lord-icon>
+            <div>
+              <strong>CTO</strong>
+          
+          </div>
+        </div>
+      </article>
+      <article class="card-glass">
+        <div class="box">
+          <h3 class="title">Isabel Mosquera</h3>
+          <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+            stroke="80" style="width:100px;height:100px">
+          </lord-icon>
+          <div>
+            <strong>CTO</strong>
+          </div>
+        </div>
+      </article>
+
+    </section>
+    <section class="container d-flex flex-column align-items-center justify-content-center mt-5" id="galeria">
+      <lord-icon src="https://cdn.lordicon.com/ppwsfvnn.json" trigger="hover" colors="primary:#fff,secondary:#fff"
+        stroke="80" style="width:100px;height:100px">
+      </lord-icon>
+      <h2 class="sub-title text-uppercase">Galería</h2>
+    </section>
+    <section  class="carousel slide container-fluid" data-bs-ride="false">
+      <section class="carousel-indicators">
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#inicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </section>
+      <section class="carousel-inner">
+        <article class="carousel-item active" style="background-image: url(./img/banner-1.jpg);">
+        </article>
+        <article class="carousel-item" style="background-image: url(./img/banner-2.jpg);">
+        </article>
+        <article class="carousel-item" style="background-image: url(./img/banner-3.jpg);">
+        </article>
+      </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#inicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#inicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <section>
+  </main>
+  <footer class="container-fluid mt-5 shadow-lg">
+    <div class="row">
+      <section class="col-md-4">
+        <a href="#" style="width: 200px;"><img src="./img/logo.png" alt="logo" class="logo"></a>
+      </section>
+      <section class="col-md-4">
+        <nav class="navbar navbar-dark  navbar-expand-md">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">N. Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#producto">Producto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sedes">Sedes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactoModal"
+                data-bs-whatever="@mdo">Contáctanos</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar navbar-dark navbar-expand">
+          <ul class="navbar-nav px-5 gap-2">
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="./img/social/facebook.svg"
+                  class="img-fluid icon-social" alt="facebook"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="./img/social/instagram.svg"
+                  class="img-fluid icon-social" alt="instagram"></a></li>
+            <li> <a class="link-primary" href="tel:573207028491" style="width: 200px;">320-702-8491</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="col-md-4">
+        <h2>Copyright © 2023 Tyrcode.</h2>
+        <a href="https://lordicon.com/">Icons by Lordicon.com</a>
+      </section>
+    </div>
+   
+  </footer>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Iniciar sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">correo:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="col-form-label">contraseña:</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+           
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="contactoModalLabel">Cotizar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="col-form-label">Nombre:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Mensaje:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="RegistroModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="RegistroModalLabel">Regístrate para disfrutar de nuestro producto</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body overflow-auto" style="height:500px;">
+          <form>
+            <div class="mb-3">
+              <label for="fecha" class="col-form-label">Fecha:</label>
+              <input type="date" class="form-control" id="fecha">
+            </div>
+            <div class="mb-3">
+              <label for="names" class="col-form-label">Nombres:</label>
+              <input type="text" class="form-control" id="names">
+            </div>
+            <div class="mb-3">
+              <label for="lastNames" class="col-form-label">Apellidos:</label>
+              <input type="text" class="form-control" id="lastNames">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Correo:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="col-form-label">Teléfono:</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+            <div class="mb-3">
+              <label for="county" class="col-form-label">País:</label>
+              <select id="county" class="form-select">
+                <option value="Colombia">Colombia</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Perú">Perú</option>
+                <option value="México">México</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="col-form-label">Contraseña:</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="col-form-label">Confirme su contraseña:</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+           
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Registrarme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      const headerHeight = 116; // Altura del encabezado
+
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            navLinks.forEach(function (link) {
+              link.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            const targetPosition = targetElement.offsetTop - headerHeight;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
